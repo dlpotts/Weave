@@ -147,7 +147,23 @@ package weave.visualization.tools
 			
 			if (controlPanel)
 			{
-				controlPanel.children = [layersEditor, axesEditor, windowEditor];
+				//controlPanel.children = [layersEditor, axesEditor, windowEditor];
+				controlPanel.children = [layerListComponent, simpleAxisEditor, windowSettingsEditor];
+				
+				if (simpleAxisEditor.label == "Legend Layers")
+				{
+					try
+					{
+						var index2:int = controlPanel.tabNavigator.getChildIndex(simpleAxisEditor);
+						controlPanel.tabNavigator.removeElementAt(index2);
+						controlPanel.tabNavigator.addChildAt(simpleAxisEditor, 0);
+						controlPanel.tabNavigator.selectedIndex = 0;
+					}
+					catch(e:Error)
+					{
+						
+					}												
+				}
 			}
 		}
 		

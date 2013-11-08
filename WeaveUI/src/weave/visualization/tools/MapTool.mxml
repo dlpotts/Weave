@@ -89,7 +89,7 @@
 			
 			override public function getSelectableAttributeNames():Array
 			{
-				return ["Color"];
+				return ["Choose Data"];
 			}
 			override public function getSelectableAttributes():Array
 			{

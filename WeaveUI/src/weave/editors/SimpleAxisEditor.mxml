@@ -94,7 +94,7 @@ along with Weave.  If not, see <http://www.gnu.org/licenses/>.
 				{
 					axisSettings.parent.removeChild(axisSettings);
 					if (!label)
-						label = lang("Margins");
+						label = lang("Legend Layers");
 				}
 			}
 		]]>

@@ -535,7 +535,7 @@
 			<editors:ScatterPlotLayerEditor id="plotEditor" width="100%"/>
 			<mx:Button label="{lang('Show legend')}" click="createLegend()"/>
 		</mx:VBox>
-		<mx:VBox id="AdvancedPanel" label="{lang('Advanced')}">
+		<mx:VBox id="AdvancedPanel" label="{lang('Format')}">
 			
 			<mx:CheckBox id="probeColumnsCheckBox" label="{lang('Include tool attributes in mouseover info')}"
 						 change="handleSelectAllAttrInProbe(probeColumnsCheckBox.selected)"/>

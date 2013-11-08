@@ -34,7 +34,7 @@
 		<mx:VBox borderStyle="solid" borderThickness="1" cornerRadius="10"
 				  paddingLeft="5" paddingRight="5" paddingBottom="5" paddingTop="5">
 			
-			<mx:Label fontWeight="bold" text="{lang('Binning type:')}"/>
+			<mx:Label fontWeight="bold" text="{lang('Group type:')}"/>
 			<mx:RadioButtonGroup id="typeGroup" change="handleTypeRadio()"/>
 			
 			<mx:HBox width="100%" verticalAlign="middle">
@@ -117,7 +117,7 @@
 		<mx:VBox width="100%" height="100%">
 			<mx:DataGrid id="binNameEditor" draggableColumns="false" sortableColumns="false" width="100%" height="100%" minWidth="0" selectable="{overrideNamesCheckBox.selected}" editable="{overrideNamesCheckBox.selected}" itemEditEnd="handleItemEdited(event)" dataProvider="{gridSource}">
 				<mx:columns>
-					<mx:DataGridColumn headerText="{lang('Bin Names')}"/>
+					<mx:DataGridColumn headerText="{lang('Group Names')}"/>
 				</mx:columns>
 			</mx:DataGrid>
 			<mx:CheckBox id="overrideNamesCheckBox" label="{lang('Edit and override names')}" change="handleOverrideCheckbox()"/>

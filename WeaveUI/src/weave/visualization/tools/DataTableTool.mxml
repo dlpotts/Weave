@@ -1003,7 +1003,7 @@
 		]]>
 	</mx:Script>
 	<ui:ControlPanel>
-		<mx:VBox label="{lang('Columns')}">
+		<mx:VBox label="{lang('Content')}">
 			<mx:CheckBox id="showKeyColumnCheckBox" label="{lang('Show key column')}" change="handleKeyColumnCheckBox()"/>
 			<mx:HBox>
 				<mx:Label text="{lang('Number of locked columns')}"/>
