@@ -81,9 +81,9 @@
 					<mx:VBox verticalGap="{verticalGap}">
 						<mx:CheckBox label="{lang('Color Controller')}"
 									 creationComplete="linkBindableProperty(Weave.properties.showColorController, event.target, 'selected')"/>
-						<mx:CheckBox label="{lang('Probe Info Editor')}"
+						<mx:CheckBox label="{lang('Mouseover Editor')}"
 									 creationComplete="linkBindableProperty(Weave.properties.showProbeToolTipEditor, event.target, 'selected')"/>
-						<mx:CheckBox label="{lang('Probe Info Window')}"
+						<mx:CheckBox label="{lang('Mouseover Window')}"
 									 creationComplete="linkBindableProperty(Weave.properties.showProbeWindow, event.target, 'selected')"/>
 						<mx:CheckBox label="{lang('Equation Editor')}"
 									 creationComplete="linkBindableProperty(Weave.properties.showEquationEditor, event.target, 'selected')"/>

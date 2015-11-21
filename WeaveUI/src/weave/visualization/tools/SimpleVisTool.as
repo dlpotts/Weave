@@ -64,7 +64,8 @@ package weave.visualization.tools
 	 * 
 	 * @author adufilie
 	 */
-	public class SimpleVisTool extends DraggablePanel implements IVisToolWithSelectableAttributes, ILinkableContainer,ICSVExportable
+	public class SimpleVisTool extends DraggablePanel implements IVisToolWithSelectableAttributes, ILinkableContainer
+	//public class SimpleVisTool extends DraggablePanel implements IVisToolWithSelectableAttributes, ILinkableContainer,ICSVExportable
 	{
 		public function SimpleVisTool()
 		{
@@ -147,16 +148,16 @@ package weave.visualization.tools
 			
 			if (controlPanel)
 			{
-				//controlPanel.children = [layersEditor, axesEditor, windowEditor];
-				controlPanel.children = [layerListComponent, simpleAxisEditor, windowSettingsEditor];
+				controlPanel.children = [layersEditor, axesEditor, windowEditor];
+				//controlPanel.children = [layerListComponent, simpleAxisEditor, windowSettingsEditor];
 				
-				if (simpleAxisEditor.label == "Legend Layers")
+				if (axesEditor.label == "Legend Layers")
 				{
 					try
 					{
-						var index2:int = controlPanel.tabNavigator.getChildIndex(simpleAxisEditor);
+						var index2:int = controlPanel.tabNavigator.getChildIndex(axesEditor);
 						controlPanel.tabNavigator.removeElementAt(index2);
-						controlPanel.tabNavigator.addChildAt(simpleAxisEditor, 0);
+						controlPanel.tabNavigator.addChildAt(axesEditor, 0);
 						controlPanel.tabNavigator.selectedIndex = 0;
 					}
 					catch(e:Error)

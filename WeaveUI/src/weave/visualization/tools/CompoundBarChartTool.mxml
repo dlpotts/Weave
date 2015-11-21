@@ -384,7 +384,7 @@
 					sortAxis.tickCountRequested.value = _plotter.maxTickMarks;
 				else
 					sortAxis.tickCountRequested.value = Math.min(_plotter.maxTickMarks, 11);
-				sortAxis.showLabels.value = !_plotter.showLabels.value || showAllLabels.value;
+				sortAxis.showLabels.value = _plotter.showLabels.value || showAllLabels.value;
 
 				// END handling of horizontal/vertical mode --------------------------------
 				
@@ -533,7 +533,7 @@
 				<ui:ColumnListComponent visTool="{this}" label="{lang('Negative error')}" creationComplete="(event.target as ColumnListComponent).hashMap = _plotter.negativeErrorColumns"/>
 			</mx:TabNavigator>
 		</mx:VBox>
-		<mx:VBox label="{lang('Probe')}">
+		<mx:VBox label="{lang('Mouseover')}">
 			<mx:Button label="{lang('Show legend')}" click="createLegend()"/>
 			<mx:CheckBox id="probeColumnsCheckBox" label="{lang('Include tool attributes in mouseover info')}"
 						 change="handleSelectAllAttrInProbe(probeColumnsCheckBox.selected)"/>

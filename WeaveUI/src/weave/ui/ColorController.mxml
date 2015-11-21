@@ -26,10 +26,10 @@
 				  title="{lang('Color Controller')}"
 				  backgroundColor="#EFF4BC"
 				  >
-	<mx:VBox id="VizControlsPanel" label="{lang('Binning')}">
+	<!--<mx:VBox id="VizControlsPanel" label="{lang('Grouping')}">
 		<ui:DynamicColumnComponent id="dataColumnComponent" label="{lang('Color data')}" showLinkControl="false"/>
 		<ui:BinningDefinitionEditor id="binEditor"/>
-	</mx:VBox>
+	</mx:VBox>-->
 	<mx:VBox id="advControlsPanel" label="{lang('Color scale')}">
 		<ui:ColorRampEditor id="cRampEditor"/>
 	</mx:VBox>
@@ -49,9 +49,9 @@
 				var colorCol:ColorColumn = Weave.defaultColorColumn;
 				var binCol:BinnedColumn = Weave.defaultColorBinColumn;
 				var dataCol:FilteredColumn = Weave.defaultColorDataColumn;
-				dataColumnComponent.dynamicObject = dataCol.internalDynamicColumn;
+				//dataColumnComponent.dynamicObject = dataCol.internalDynamicColumn;
 				cRampEditor.colorRamp = colorCol.ramp;
-				linkSessionState(binCol, binEditor.binnedColumn);
+				//linkSessionState(binCol, binEditor.binnedColumn);
 				linkSessionState(colorCol.recordColors, colorOverrideEditor.recordColors);
 				
 				targets = [colorCol];
